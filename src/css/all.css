@@ -1,0 +1,124 @@
+@charset "UTF-8";
+html {
+  overflow: auto; }
+
+body {
+  background-color: #f3f1e8;
+  overflow-x: hidden; }
+
+ul {
+  list-style: none; }
+
+/* 全てのウィンドウサイズ*/
+.btn-primary {
+  color: #fff;
+  background-color: #977272;
+  border: none; }
+
+.box {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.codepen-embed-container {
+  margin: 3rem 0 0; }
+  .codepen-embed-container h3 {
+    margin-bottom: 1rem;
+    color: #655353; }
+
+.box-title {
+  font-size: 3.5rem;
+  color: #846c6c; }
+
+#scroll-top-nav {
+  position: fixed;
+  right: 0;
+  bottom: 0; }
+  #scroll-top-nav a {
+    font-size: 4rem;
+    color: #846c6c;
+    padding: 0 2rem;
+    transition: all 0.5s; }
+    #scroll-top-nav a:hover {
+      color: #b3a2a2; }
+
+#main {
+  background-color: #f3f1e8; }
+
+#logo {
+  font-size: 6rem;
+  color: #846c6c;
+  margin-left: 50px; }
+
+#main-nav {
+  width: 150px;
+  margin: 0;
+  margin-left: 50px;
+  box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s; }
+  #main-nav ul {
+    padding: 0;
+    list-style-type: none;
+    background-color: #ece7df;
+    margin-bottom: 0; }
+  #main-nav li {
+    text-align: center; }
+    #main-nav li:last-child {
+      border-bottom: none; }
+    #main-nav li a {
+      display: block;
+      padding: 8px 16px;
+      text-decoration: none;
+      color: #895858;
+      font-weight: bold;
+      transition: all 0.5s; }
+      #main-nav li a.active {
+        color: #ffffff;
+        background-color: #da3c41; }
+      #main-nav li a:hover:not(.active) {
+        color: #ffffff;
+        background-color: #7e463e; }
+  #main-nav.side-nav {
+    position: fixed;
+    right: 0; }
+
+#about {
+  background-color: #f3f1e8; }
+  #about .box-title {
+    margin-left: 100px; }
+
+#about-dl dt,
+#about-dl dd {
+  color: #655353; }
+
+#about-dl dt:not(:first-child) {
+  margin-top: 1.5rem; }
+
+#about-dl dd {
+  margin-left: 1rem; }
+
+#about-dl a {
+  color: #988181;
+  text-decoration: underline; }
+
+#contact-form {
+  max-width: 500px;
+  margin: 0 auto; }
+  #contact-form label {
+    color: #593a3a; }
+  #contact-form .form-control {
+    background-color: #fffcfa; }
+
+#contact-form-content textarea {
+  height: 10rem; }
+
+#main-footer {
+  margin-top: 5rem;
+  padding: 2rem 0 2rem;
+  height: 150px; }
+
+#copyright {
+  color: #593a3a; }
