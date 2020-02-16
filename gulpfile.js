@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+const changed = require('gulp-changed');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 const concat = require('gulp-concat');
@@ -7,7 +8,7 @@ const {
   series,
   parallel
 } = require('gulp');
-const spawn= require('cross-spawn');
+const spawn = require('cross-spawn');
 
 
 function browserSyncServe() {
@@ -38,7 +39,9 @@ function sassWatch() {
 
 
 function jekyllBuild() {
-  let jekyll = spawn('jekyll', ['build'], { cwd: 'src/jekyll'});
+  let jekyll = spawn('jekyll', ['build'], {
+    cwd: 'src/jekyll'
+  });
 
   jekyll.stderr.on('data', function (data) {
     console.log('' + data);
@@ -59,6 +62,7 @@ function jekyllWatch() {
 
 function jekyllCopy() {
   return src('src/jekyll/_site/**/*.html')
+    .pipe(changed('src/article'))
     .pipe(gulp.dest('src/article'));
 }
 
@@ -66,6 +70,30 @@ function jekyllCopy() {
 
 function jekyllCopyWatch() {
   gulp.watch('src/jekyll/_site/**/*.html', series(jekyllCopy));
+}
+
+
+
+
+
+function public() {
+  return src([
+    'src/**/*.html',
+    'src/**/*.css',
+    'src/**/*.js',
+  ])
+    .pipe(changed('public'))
+    .pipe(gulp.dest('public'));
+}
+
+
+
+function publicWatch() {
+  gulp.watch([
+    'src/**/*.html',
+    'src/**/*.css',
+    'src/**/*.js',
+  ], series(public));
 }
 
 
@@ -78,7 +106,10 @@ exports.sassWatch = sassWatch;
 exports.jekyllBuild = jekyllBuild;
 exports.jekyllWatch = jekyllWatch;
 
-exports.jekyllCopy= jekyllCopy;
+exports.jekyllCopy = jekyllCopy;
 exports.jekyllCopyWatch = jekyllCopyWatch;
 
-exports.default = parallel(browserSyncServe, sassWatch, jekyllWatch, jekyllCopyWatch);
+exports.default = parallel(browserSyncServe, sassWatch, jekyllWatch, jekyllCopyWatch, publicWatch);
+
+exports.public = public;
+exports.publicWatch = publicWatch;
