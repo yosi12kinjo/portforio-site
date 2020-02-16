@@ -5,30 +5,7 @@ title: gulp
 # gulp
 
 
-[gulp.js - The streaming build system](https://gulpjs.com/ "gulp.js - The streaming build system")
-
-
-
-
-
-## Sass
-
-
-[Sass: Syntactically Awesome Style Sheets](https://sass-lang.com/)
-
-
-
-
-
-## gulp-sass
-
-
-[gulp-sass  -  npm](https://www.npmjs.com/package/gulp-sass)
-
-
-
-
-## gulp-watch
+- [gulp.js - The streaming build system](https://gulpjs.com/ "gulp.js - The streaming build system")
 
 
 

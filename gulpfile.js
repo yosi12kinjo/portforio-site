@@ -78,7 +78,8 @@ function jekyllCopyWatch() {
 
 function public() {
   return src([
-    'src/**/*.html',
+    'src/*.html',
+    'src/article/*.html',
     'src/**/*.css',
     'src/**/*.js',
   ])
@@ -90,7 +91,8 @@ function public() {
 
 function publicWatch() {
   gulp.watch([
-    'src/**/*.html',
+    'src/*.html',
+    'src/article/*.html',
     'src/**/*.css',
     'src/**/*.js',
   ], series(public));

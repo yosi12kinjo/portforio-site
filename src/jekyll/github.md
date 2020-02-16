@@ -10,3 +10,8 @@ title: GitHub
 
 
 
+## GitHub Pages
+
+> GitHub Pages は、GitHub のリポジトリから HTML、CSS、および JavaScript ファイル を直接取得し、任意でビルドプロセスを通じてファイルを実行し、ウェブサイトを公開できる静的なサイトホスティングサービスです。
+> 
+> [GitHub Pages について - GitHub ヘルプ](https://help.github.com/ja/github/working-with-github-pages/about-github-pages)
