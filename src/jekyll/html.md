@@ -18,15 +18,15 @@ title: HTML
 
 ## 学習
 
-- [HTML の基本 - ウェブ開発を学ぶ | MDN](https://developer.mozilla.org/ja/docs/Learn/Getting_started_with_the_web/HTML_basics)
-- [HTML の学習: ガイドとチュートリアル - ウェブ開発を学ぶ | MDN](https://developer.mozilla.org/ja/docs/Learn/HTML)
-- [HTML: HyperText Markup Language | MDN](https://developer.mozilla.org/ja/docs/Web/HTML)
+- [HTML の基本 - ウェブ開発を学ぶ &#124; MDN](https://developer.mozilla.org/ja/docs/Learn/Getting_started_with_the_web/HTML_basics)
+- [HTML の学習: ガイドとチュートリアル - ウェブ開発を学ぶ &#124; MDN](https://developer.mozilla.org/ja/docs/Learn/HTML)
+- [HTML: HyperText Markup Language &#124; MDN](https://developer.mozilla.org/ja/docs/Web/HTML)
 
 
 ## リファレンス
 
-- [HTML リファレンス - HTML: HyperText Markup Language | MDN](https://developer.mozilla.org/ja/docs/Web/HTML/Reference)
-- [HTML 要素リファレンス - HTML: HyperText Markup Language | MDN](https://developer.mozilla.org/ja/docs/Web/HTML/Element)
+- [HTML リファレンス - HTML: HyperText Markup Language &#124; MDN](https://developer.mozilla.org/ja/docs/Web/HTML/Reference)
+- [HTML 要素リファレンス - HTML: HyperText Markup Language &#124; MDN](https://developer.mozilla.org/ja/docs/Web/HTML/Element)
 
 
 ## 特殊文字

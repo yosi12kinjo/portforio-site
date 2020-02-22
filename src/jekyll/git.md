@@ -21,7 +21,7 @@ title: Git
 
 > リモートリポジトリにローカルリポジトリの変更を反映するためのコマンドが用意されています。
 > 
-> [git pushでリモートリポジトリにプッシュする方法 | TechAcademyマガジン](https://techacademy.jp/magazine/10271)
+> [git pushでリモートリポジトリにプッシュする方法 &#124; TechAcademyマガジン](https://techacademy.jp/magazine/10271)
 
 
 ## ブランチ

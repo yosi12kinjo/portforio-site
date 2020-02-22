@@ -13,14 +13,21 @@ const {
 
 
 function public() {
-  return src([
-    'src/*.html',
-    'src/article/*.html',
-    'src/**/*.css',
-    'src/**/*.js',
-  ])
-    .pipe(changed('public'))
-    .pipe(dest('public'));
+  return series(
+    () => {
+      return src([
+        'src/*.html',
+        'src/**/*.css',
+        'src/**/*.js',
+      ])
+        .pipe(changed('public'))
+        .pipe(dest('public'))
+    },
+    () => {
+      return src(['src/article/*.html'])
+        .pipe(changed('public/article'))
+        .pipe(dest('public/article'))
+    });
 }
 
 
