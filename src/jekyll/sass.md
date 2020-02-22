@@ -6,13 +6,13 @@ title: SASS
 
 > Sass（サース[2][3]、英: Syntactically Awesome Stylesheets）は、ハンプトン・キャトリン[4]が設計しネイサン・バイゼンバウム[5]が開発したスタイルシート言語である。
 > 
-> [Sass - Wikipedia](https://ja.wikipedia.org/wiki/Sass)
+> <cite>[Sass - Wikipedia](https://ja.wikipedia.org/wiki/Sass)</cite>
 
 
 
 ## 公式サイト
 
-- [Sass: Syntactically Awesome Style Sheets](https://sass-lang.com/)
+- <cite>[Sass: Syntactically Awesome Style Sheets](https://sass-lang.com/)</cite>
 
 
 
@@ -20,7 +20,7 @@ title: SASS
 
 >     npm install -g sass
 > 
-> [Sass: Install Sass](https://sass-lang.com/install)
+> <cite>[Sass: Install Sass](https://sass-lang.com/install)</cite>
 
 
 
@@ -28,5 +28,5 @@ title: SASS
 
 >     npm install node-sass gulp-sass --save-dev
 > 
-> [gulp-sass - npm](https://www.npmjs.com/package/gulp-sass)
+> <cite>[gulp-sass - npm](https://www.npmjs.com/package/gulp-sass)</cite>
 

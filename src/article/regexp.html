@@ -8,7 +8,7 @@
   <meta name="description" content="ポートフォリオサイト">
   <meta name="author" content="yosi12">
 
-  <title>npm - YOSI12'S PORTFORIO</title>
+  <title>正規表現 - YOSI12'S PORTFORIO</title>
 
 
 
@@ -54,50 +54,31 @@
 
 <body>
   <div id="post" class="container">
-    <h1 id="npm">npm</h1>
+    <h1 id="正規表現">正規表現</h1>
 
-<blockquote>
-  <p>npmとはパッケージ管理システムの1種。Node Package Managerの意[3]。</p>
+<h2 id="ガイド">ガイド</h2>
 
-  <p><cite><a href="https://ja.wikipedia.org/wiki/Npm_%28%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E7%AE%A1%E7%90%86%E3%83%84%E3%83%BC%E3%83%AB%29">npm (パッケージ管理ツール) - Wikipedia</a></cite></p>
-</blockquote>
+<ul>
+  <li><cite><a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide/Regular_Expressions">正規表現 - JavaScript | MDN</a></cite></li>
+</ul>
 
-<h2 id="インストール済のパッケージを確認する">インストール済のパッケージを確認する</h2>
+<h2 id="リファレンス">リファレンス</h2>
 
-<blockquote>
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm ls --depth=0
-</code></pre></div>  </div>
+<ul>
+  <li><cite><a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/RegExp">RegExp - JavaScript | MDN</a></cite></li>
+</ul>
 
-  <p><cite><a href="https://qiita.com/phi/items/9fcca3e7af5d25ff2653">[Node.js] インストール済みのパッケージ一覧を表示する - Qiita</a></cite></p>
-</blockquote>
+<h2 id="example">example</h2>
 
-<h2 id="グローバル環境とローカル環境の違い">グローバル環境とローカル環境の違い</h2>
+<p>search for</p>
 
-<h3 id="グローバル環境">グローバル環境</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>^(&gt;|-) (\[[^\]]+\]\([^\)]+\))
+</code></pre></div></div>
 
-<blockquote>
-  <p>グローバルインストールをした場合、実行ファイルがパスの指定なしで実行できる。上記でhogeパッケージをインストールした場合コンソール画面でhogeコマンドが直接操作できる。</p>
+<p>replace with</p>
 
-  <p><cite><a href="https://mosapride.com/index.php/2018/02/06/post-681/">【npm】グローバルインストールは控えるべき</a></cite></p>
-</blockquote>
-
-<h3 id="ローカル環境">ローカル環境</h3>
-
-<blockquote>
-  <p>グローバル環境を汚染しない</p>
-
-  <p>ローカルインストールされたものはプロジェクトディレクトリの中の「node_modules」というディレクトリにインストールされるため、グローバル環境を綺麗に保てます。</p>
-
-  <p><cite><a href="https://qiita.com/aya02/items/4c9c827f6a782ef65d57">CLI 環境構築 グローバルインストールとローカルインストールの違いについて - Qiita</a></cite></p>
-</blockquote>
-
-<h2 id="extraneous">extraneous</h2>
-
-<blockquote>
-  <p>node_modulesに存在するのにpackage.jsonのdependenciesに無いライブラリにextraneousが付く。</p>
-
-  <p><cite><a href="https://qiita.com/noratmt/items/01666f7b646a90ade507">node.jsの依存ライブラリを整理してみた - Qiita</a></cite></p>
-</blockquote>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$1 &lt;cite&gt;$2&lt;/cite&gt;
+</code></pre></div></div>
 
   </div>
 
